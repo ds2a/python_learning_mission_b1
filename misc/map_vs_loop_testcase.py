@@ -17,3 +17,12 @@ print(result_list_1)
 result_list_2 = list(map(lambda e:e*e, input_list))
 print(result_list_2)
 
+# Creating two iterators
+
+list1 = [1, 2, 4, 5]
+list2 = [5, 2, 8, 3]
+# Using map with lambda to pass the two iterators
+list1_list2 = map(lambda x1, x2: x1+x2, list1, list2)
+# Observing the result
+print(list(list1_list2))  # Output is [6, 4, 12, 8]
+
